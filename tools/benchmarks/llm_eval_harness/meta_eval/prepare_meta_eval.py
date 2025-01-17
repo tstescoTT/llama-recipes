@@ -66,7 +66,7 @@ def get_math_data(model_name, output_dir):
         raise ValueError(
             "Only Llama-3.1-8B-Instruct, Llama-3.1-70B-Instruct, Llama-3.1-405B-Instruct models are supported for MATH_hard"
         )
-    original_dataset_name = "lighteval/MATH-Hard"
+    original_dataset_name = "DigitalLearningGmbH/MATH-lighteval"
     meta_dataset_name = f"meta-llama/{model_name}-evals"
     meta_data = load_dataset(
         meta_dataset_name,
